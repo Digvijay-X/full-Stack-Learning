@@ -1,0 +1,13 @@
+
+*{
+    background-color: rgb(175, 167, 167);
+}
+
+h1{
+    /* text-align: center; */
+    /* text-align: end; */
+    border: 2px solid black;
+    text-align: start;
+    /* text-align: justify; */
+
+}

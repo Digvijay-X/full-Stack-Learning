@@ -1,0 +1,17 @@
+h1{
+    background-color: black;
+    color: aquamarine;
+    font-weight: 200;
+    /* font-size: ; */
+    text-align: center;
+
+    line-height: 6;
+    text-decoration: red underline;
+}
+
+.p1{
+    color: rgb(18, 152, 98);
+    background-color: rgb(80, 56, 82);
+    text-decoration: line-through;
+    line-height: 2;
+}
