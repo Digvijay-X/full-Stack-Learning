@@ -1,0 +1,55 @@
+/* ---------------- Pseudo Classes ---------------- */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: green;
+}
+
+button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* ---------------- Pseudo Elements ---------------- */
+p::first-letter {
+  font-size: 30px;
+  color: darkred;
+  font-weight: bold;
+}
+
+p::after {
+  content: " 🔥"; /* paragraph ke baad ek emoji add ho jayega */
+  color: orange;
+}
+
+/* ---------------- Cascading ---------------- */
+/* Universal selector (lowest priority) */
+p {
+  color: black;
+}
+
+/* Class selector (more priority than element) */
+.test {
+  color: blue;
+}
+
+/* Inline style (agar hota to sabse jyada priority hoti) */
+
+/* ---------------- Specificity ---------------- */
+/* Class selector */
+.highlight {
+  color: green;
+}
+
+/* ID selector (more specific, overrides class) */
+#para {
+  color: red;
+}

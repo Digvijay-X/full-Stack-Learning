@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators & Attribute Selectors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Combinators & Attribute Selectors Demo</h1>
+
+  <!-- Child Combinator Example -->
+  <div class="parent">
+    <h2>Child Combinator Example</h2>
+    <p>Ye paragraph <b>direct child</b> hai div ka.</p>
+    <div>
+      <p>Ye paragraph nested div ke andar hai (direct child nahi).</p>
+    </div>
+  </div>
+
+  <!-- Adjacent Sibling Combinator Example -->
+  <div class="sibling-demo">
+    <h2>Adjacent Sibling Example</h2>
+    <h3>Heading 3</h3>
+    <p>Ye paragraph h3 ke turant baad aata hai, isliye ye style hoga.</p>
+    <p>Ye paragraph bhi h3 ke baad hai, lekin turant nahi, isliye style nahi hoga.</p>
+  </div>
+
+  <!-- Attribute Selector Example -->
+  <div class="attribute-demo">
+    <h2>Attribute Selector Example</h2>
+    <a href="https://www.google.com" target="_blank">Google</a><br>
+    <a href="https://www.github.com" target="_self">GitHub</a><br>
+    <input type="text" placeholder="Enter text">
+    <input type="password" placeholder="Enter password">
+  </div>
+
+</body>
+</html>
