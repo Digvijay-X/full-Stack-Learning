@@ -1,0 +1,43 @@
+/* --- Box Model Example --- */
+.box {
+  height: 150px;              /* Height */
+  width: 200px;               /* Width */
+  border: 3px solid blue;     /* Border */
+  border-radius: 15px;        /* Border Radius */
+  padding: 20px;              /* Padding */
+  margin: 30px;               /* Margin */
+  background-color: lightyellow;
+}
+
+/* --- Display Property --- */
+.block {
+  display: block;             /* Takes full width */
+  background: lightgreen;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.inline {
+  display: inline;            /* Stays inline */
+  background: pink;
+  padding: 5px;
+  margin: 5px;
+}
+
+.inline-block {
+  display: inline-block;      /* Inline but allows height/width */
+  background: orange;
+  width: 120px;
+  height: 80px;
+  margin: 5px;
+}
+
+/* --- Relative Units Example --- */
+.relative-box {
+  font-size: 16px; /* base */
+  width: 50%;      /* percentage unit */
+  padding: 1em;    /* em = relative to font-size */
+  margin: 2rem;    /* rem = relative to root font-size */
+  border: 2px dashed brown;
+  background-color: lightblue;
+}
