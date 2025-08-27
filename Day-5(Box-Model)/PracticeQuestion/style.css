@@ -1,0 +1,27 @@
+.main{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+.common{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+.one{
+    
+    background: #ec0808;
+
+}
+
+.two{
+    background-color: rgb(227, 227, 4);
+}
+
+.three{
+    background-color: rgb(34, 255, 0);
+}
+
