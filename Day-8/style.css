@@ -1,0 +1,98 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f9;
+}
+
+header {
+    background: #6c5ce7;
+    color: white;
+    padding: 20px;
+}
+
+/* 
+   CSS GRID EXAMPLE
+ */
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 15px; /* grid gap */
+    padding: 20px;
+}
+
+.pet-card {
+    background: #ffeaa7;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*  
+   ANIMATION EXAMPLE
+  */
+.animation-demo h2 {
+    font-size: 30px;
+    color: #d63031;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/*  
+   MEDIA QUERY EXAMPLE
+  */
+@media (max-width: 600px) {
+    body {
+        background: #dfe6e9;
+    }
+    .pet-grid {
+        grid-template-columns: 1fr; /* stack items */
+    }
+}
+
+/*  
+   Z-INDEX EXAMPLE
+  */
+.zindex-demo {
+    position: relative;
+    height: 150px;
+    margin: 30px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background: #00b894;
+    z-index: 1; /* behind */
+}
+
+.box2 {
+    background: #0984e3;
+    top: 30px;
+    left: 45%;
+    z-index: 2; /* above */
+}
+
+footer {
+    background: #2d3436;
+    color: white;
+    padding: 15px;
+}
