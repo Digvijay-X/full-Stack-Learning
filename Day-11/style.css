@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ff4b2b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ff4b2b;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.btn:hover {
+  box-shadow: 0px 0px 15px #ff4b2b;
+}
+
+/* Content */
+.content {
+  z-index: 2;
+  position: relative;
+  top: 20%;
+  text-align: center;
+  padding: 0 20px;
+}
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.content h1 span {
+  color: #ff4b2b;
+}
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+.explore-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #4776E6, #8E54E9);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.explore-btn:hover {
+  box-shadow: 0px 0px 20px #8E54E9;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
