@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevFolio — Your Name</title>
+  <meta name="description" content="A clean, responsive developer portfolio made with only HTML and CSS." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="brand">Digvijay Singh<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn btn--sm">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero container">
+      <div class="hero__text">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1 class="title">Your <span>Frontend</span> Developer</h1>
+        <p class="subtitle">
+          I build fast, accessible, and responsive web experiences using HTML & CSS (and a pinch of love).
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn--outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <!-- Decorative only -->
+        <div class="blob"></div>
+        <div class="ring"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container" aria-label="Core Skills">
+      <article class="card">
+        <h3>Semantic HTML</h3>
+        <p>Clean, meaningful structure for better SEO and accessibility.</p>
+      </article>
+      <article class="card">
+        <h3>Modern CSS</h3>
+        <p>CSS variables, Grid, Flexbox, and responsive design best practices.</p>
+      </article>
+      <article class="card">
+        <h3>Performance</h3>
+        <p>Lightweight pages, optimized assets, and minimal dependencies.</p>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <header class="section-head">
+        <h2>Selected Projects</h2>
+        <p>Pure HTML + CSS components to show layout, cards, and responsive grid.</p>
+      </header>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="project">
+          <div class="project__thumb gradient" role="img" aria-label="Landing page preview"></div>
+          <div class="project__body">
+            <h3>Landing Page</h3>
+            <p>A clean hero, feature cards, and responsive container using Flexbox & Grid.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Grid</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project">
+          <div class="project__thumb gradient-2" role="img" aria-label="Portfolio preview"></div>
+          <div class="project__body">
+            <h3>Portfolio</h3>
+            <p>Semantic sections, accessible nav, and smooth hover interactions.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Flexbox</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project">
+          <div class="project__thumb gradient-3" role="img" aria-label="Component library preview"></div>
+          <div class="project__body">
+            <h3>UI Components</h3>
+            <p>Buttons, cards, badges, forms, and utility classes built from scratch.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>Utilities</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+      <div class="about__text">
+        <h2>About Me</h2>
+        <p>
+          hii myself Digvijay Singh and i am a developer who loves crafting minimal, fast, and accessible web UIs.
+          My toolkit: semantic HTML, modern CSS, Grid/Flexbox, and responsive patterns.
+        </p>
+        <ul class="bullets">
+          <li>Semantic & Accessible Markup</li>
+          <li>Mobile-first Responsive Design</li>
+          <li>Reusable CSS Utilities</li>
+        </ul>
+      </div>
+      <div class="about__card">
+        <h3>Quick Info</h3>
+        <dl>
+          <dt>Location</dt><dd>India</dd>
+          <dt>Focus</dt><dd>Frontend (HTML/CSS)</dd>
+          <dt>Open to</dt><dd>Freelance & Internships</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+      <header class="section-head">
+        <h2>Let’s work together</h2>
+        <p>Fill this form — it’s non-functional (HTML/CSS only) but perfectly styled.</p>
+      </header>
+      <form class="form" aria-label="Contact form (demo)">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Your Name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea rows="4" placeholder="Project details…"></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2025</span> DevFolio — HTML & CSS Only</p>
+      <ul class="social">
+        <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+        <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+        <li><a href="#" aria-label="Twitter profile">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
